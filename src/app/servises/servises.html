@@ -1,0 +1,49 @@
+<section class="services-section" #servicesSection>
+  <div class="services-content">
+    <div class="section-header">
+      <span class="tag">SERVICES</span>
+      <h2 class="title">Our Premium Marketing Services</h2>
+      <p class="description">Specialized solutions to elevate your brand</p>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-card" 
+           [class.active]="clickedCard === 0"
+           (click)="onCardClick(0)"
+           style="--card-index: 0;">
+        <div class="service-icon"><i class="fas fa-video"></i></div>
+        <h3 class="service-title">Video Editing</h3>
+        <p class="service-description">Elevate your brand with our cutting-edge video production services.</p>
+      </div>
+
+      <div class="service-card" 
+           [class.active]="clickedCard === 1"
+           (click)="onCardClick(1)"
+           style="--card-index: 1;">
+        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+        <h3 class="service-title">Graphic Design</h3>
+        <p class="service-description">Stunning visual designs that communicate your brand story.</p>
+      </div>
+
+      <div class="service-card" 
+           [class.active]="clickedCard === 2"
+           (click)="onCardClick(2)"
+           style="--card-index: 2;">
+        <div class="service-icon"><i class="fas fa-chess"></i></div>
+        <h3 class="service-title">Brand Strategy</h3>
+        <p class="service-description">Comprehensive brand strategies for market dominance.</p>
+      </div>
+
+      
+    </div>
+
+    
+  </div>
+
+  <div class="hero-glow"></div>
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+</section>

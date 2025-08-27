@@ -1,0 +1,44 @@
+<header class="header-container" #header 
+        [class.scrolled]="isScrolled" 
+        [class.hidden]="isHidden">
+  <div class="logo">
+    <a routerLink="/">
+      <img src="https://i.postimg.cc/g2zKFZLf/levelup-logo-removebg-preview.png" width="40" alt="LevelUp Logo" class="logo-img">
+      <span class="logo-glow"></span>
+    </a>
+  </div>
+
+  <nav class="nav-menu">
+    <a (click)="scrollTo('hero')" 
+       class="nav-link" 
+       [class.active]="isActive('hero')">
+      <span>LevelUp</span>
+      <div class="link-underline"></div>
+    </a>
+    <a (click)="scrollTo('services')" 
+       class="nav-link" 
+       [class.active]="isActive('services')">
+      <span>Services</span>
+      <div class="link-underline"></div>
+    </a>
+    <a (click)="scrollTo('team')" 
+       class="nav-link" 
+       [class.active]="isActive('team')">
+      <span>Team</span>
+      <div class="link-underline"></div>
+    </a>
+    <a (click)="scrollTo('contact')" 
+       class="nav-link" 
+       [class.active]="isActive('contact')">
+      <span>Contact us</span>
+      <div class="link-underline"></div>
+    </a>
+  </nav>
+
+  <button (click)="openEmail()" class="contact-button">
+    <span>Get In Touch</span>
+    <div class="button-glow"></div>
+  </button>
+  
+  <div class="header-glow"></div>
+</header>

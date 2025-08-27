@@ -1,11 +1,12 @@
 import { provideZonelessChangeDetection } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
+import { Footer } from './footer/footer';
 import { App } from './app';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App],
+      imports: [App, Headers , Footer, ],
       providers: [provideZonelessChangeDetection()]
     }).compileComponents();
   });
@@ -20,6 +21,6 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, project');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, First-App');
   });
 });

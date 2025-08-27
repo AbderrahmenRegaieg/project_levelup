@@ -1,0 +1,30 @@
+<!-- hero.component.html -->
+<section class="hero-section" #heroSection>
+  <div class="hero-content">
+    <div class="section-header">
+      <span class="tag">CREATIVE AGENCY</span>
+      <h1 class="title">{{dynamicContent.logo}}</h1>
+      <p class="description">{{dynamicContent.subtitle}}</p>
+    </div>
+    
+    <div class="dynamic-content">
+      <h2 class="main-title">
+        <span class="dynamic-text">{{currentService}}</span>
+        <span class="cursor">|</span>
+      </h2>
+      <p class="service-description">{{dynamicContent.descriptions[currentDescriptionIndex]}}</p>
+    </div>
+
+    <button (click)="openEmail()" class="cta-button">
+      <span>{{dynamicContent.ctaText}}</span>
+      <div class="button-glow"></div>
+    </button>
+  </div>
+
+  <div class="hero-glow"></div>
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+</section>
