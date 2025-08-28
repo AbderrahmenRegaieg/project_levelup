@@ -23,7 +23,7 @@
             ],
             "styles": [
               "src/styles.css"
-            ],"outputPath": "dist/project/browser"
+            ],"outputPath": "dist/project"
           },
           "configurations": {
             "production": {
