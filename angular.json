@@ -23,7 +23,7 @@
             ],
             "styles": [
               "src/styles.css"
-            ]
+            ],"outputPath": "dist/project/browser"
           },
           "configurations": {
             "production": {
@@ -35,8 +35,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "7kB",
+                  "maximumError": "10kB"
                 }
               ],
               "outputHashing": "all"
@@ -67,6 +67,7 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
+            "browsers": "src/main.ts",
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
@@ -78,11 +79,18 @@
               "src/styles.css"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+    "options": {
+      "branch": "gh-pages",
+      "repo": "https://github.com/abderrahmenregaieg/project_levelup.git"
         }
+      }
       }
     }
   },
   "cli": {
-    "analytics": "8378b33f-00a5-41dd-9e47-e7809d8712cd"
+    "analytics": "126ba7b6-9a3c-4847-9a38-803dc36a0164"
   }
 }
