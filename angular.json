@@ -23,7 +23,7 @@
             ],
             "styles": [
               "src/styles.css"
-            ],"outputPath": "dist/project"
+            ],"outputPath": "dist/project","baseHref": "/project_levelup/"
           },
           "configurations": {
             "production": {
