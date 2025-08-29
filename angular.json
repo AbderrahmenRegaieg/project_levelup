@@ -84,7 +84,7 @@
           "builder": "angular-cli-ghpages:deploy",
     "options": {
       "branch": "gh-pages",
-      "repo": "https://github.com/abderrahmenregaieg/project_levelup/"
+      "repo": "https://github.com/Abderrahmenregaieg/project_levelup/"
         }
       }
       }
